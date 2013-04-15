@@ -1,0 +1,13 @@
+<% if query_reviewer_enabled? %>
+  <div id="query_reviewer_pane" class="peek_pane collapsed">
+    <div class="inner">
+      <p>MySQL profiling enabled. <a href="#" class="disable_query_reviewer_button minibutton blue">Disable analysis report</a></p>
+    </div>
+  </div>
+<% else %>
+  <div id="query_reviewer_pane" class="peek_pane collapsed" style="display: none;">
+    <div class="inner">
+      <p class="disabled-warning">MySQL profiling disabled. <a href="#" class="enable_query_reviewer_button minibutton blue">Enable analysis report</a></p>
+    </div>
+  </div>
+<% end %>
